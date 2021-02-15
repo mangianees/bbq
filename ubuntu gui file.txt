@@ -1,0 +1,33 @@
+source https://phoenixnap.com/kb/how-to-install-a-gui-on-ubuntu
+
+
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install tasksel
+sudo apt-get install slim
+sudo apt-get install lightdm
+tasksel
+(Use the Space key to select it, press Tab to select OK at the bottom, then press Enter)
+(Enter your login credentials. Use F1 to switch between GUIs if you have multiple interfaces installed.)
+
+KDE Plasma
+sudo apt-get install kde-plasma-desktop
+sudo service display_manager start
+
+Mate Core Server Desktop
+Mate is a popular and lightweight graphical interface. Install it by executing the following command:
+sudo tasksel install ubuntu-mate-core
+sudo service display_manager start
+To exit the GUI, open the command line and enter:
+sudo service display_manager stop
+
+
+Lubuntu Core Server Desktop
+Lubuntu is a very lightweight GUI. Use this application if you need a graphical interface, but want to minimize the impact on system memory and processor.
+
+To install Lubuntu, enter the following:
+sudo tasksel install lubuntu-core
+Alternately, you can install from the tasksel menu with the command:
+tasksel
+Launch the GUI with:
+sudo service display_manager start
+sudo service display_manager stop
